@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://verimhub.com/sitemap.xml
+Sitemap: https://verimhub.vercel.app/sitemap.xml
