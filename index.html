@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerimHub | Dijital İş Akışı, SaaS Araçları ve Verimlilik Rehberi</title>
+  <meta name="description" content="Modern çalışma hayatı için bağımsız SaaS rehberleri, Notion şablonları, iş akışı otomasyonu ve adım adım sorun giderme çözümleri.">
+  <meta name="keywords" content="verimlilik araçları, saas rehberi, notion şablonları, trello asana, iş akışı otomasyonu">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://verimhub.com/">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://verimhub.com/">
+  <meta property="og:title" content="VerimHub | Dijital İş Akışı ve SaaS Rehberi">
+  <meta property="og:description" content="Modern ekipler için bizzat test edilmiş araç incelemeleri ve çözümler.">
+
+  <!-- Schema.org WebSite JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "VerimHub",
+    "url": "https://verimhub.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://verimhub.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Glassmorphism Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        VerimHub
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Ana Sayfa</a></li>
+        <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+        <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-btn" aria-label="Temayı Değiştir">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-pill">
+        <span>✨ 2026 Bağımsız Dijital Verimlilik Kılavuzu</span>
+      </div>
+      <h1 class="hero-title">
+        Modern Ekipler ve Profesyoneller İçin <span class="text-gradient">Dijital İş Akışı Çözümleri</span>
+      </h1>
+      <p class="hero-description">
+        Teorik makaleleri unutun. Bizzat test edilmiş SaaS incelemeleri, adım adım sorun giderme adımları ve işinizi kolaylaştıracak şablonlar.
+      </p>
+
+      <!-- Instant Live Search Bar -->
+      <div class="search-box-wrapper">
+        <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" id="heroSearchInput" class="search-input" placeholder="Hangi aracı veya sorunu arıyorsunuz? (Örn: Notion, Slack, Zoom, PDF...)">
+      </div>
+
+      <!-- Quick Filter Tags -->
+      <div class="filter-tags">
+        <button class="filter-tag active" data-category="all">Tümü (15)</button>
+        <button class="filter-tag" data-category="saas">SaaS & Verimlilik</button>
+        <button class="filter-tag" data-category="collab">Proje Yönetimi</button>
+        <button class="filter-tag" data-category="tools">Araçlar & Formüller</button>
+        <button class="filter-tag" data-category="troubleshoot">Sorun Giderme</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Derinlemesine Rehber</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">%100</div>
+        <div class="stat-label">Bizzat Test Edilmiş</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">&lt; 100ms</div>
+        <div class="stat-label">Ultra Hızlı Yükleme</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">0 YMYL</div>
+        <div class="stat-label">Yüksek AdSense Onay Şansı</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout (Grid + Sidebar) -->
+  <main class="container main-content-layout">
+    <!-- Articles Feed -->
+    <section>
+      <div class="section-header">
+        <h2 class="section-title">En Son Yayınlanan Rehberler</h2>
+        <span style="font-size: 0.9rem; color: var(--text-muted);">Güncel & Orijinal İçerikler</span>
+      </div>
+
+      <div id="noResultsMsg" style="display:none; text-align:center; padding: 3rem 1rem; color: var(--text-muted);">
+        <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">Aradığınız kriterlere uygun rehber bulunamadı.</p>
+        <small>Farklı bir anahtar kelime deneyebilir veya kategori filtrelerini kullanabilirsiniz.</small>
+      </div>
+
+      <div id="articlesGrid" class="articles-grid">
+        
+        <!-- Card 1 -->
+        <article class="article-card" data-category="saas">
+          <div class="card-top">
+            <span class="badge badge-saas">Notion</span>
+            <span class="reading-time">⏱️ 7 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/notion-ogrenci-ders-programi-sablonu.html">Notion Öğrenci Ders Programı ve Sınav Takip Şablonu Nasıl Yapılır?</a>
+          </h3>
+          <p class="card-excerpt">
+            Sıfırdan ilişkisel veritabanları, vize-final kalan gün sayısı formülleri ve haftalık dinamik gösterge paneli hazırlama rehberi.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/notion-ogrenci-ders-programi-sablonu.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="article-card" data-category="collab">
+          <div class="card-top">
+            <span class="badge badge-collab">Proje Yönetimi</span>
+            <span class="reading-time">⏱️ 8 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/trello-vs-asana-karsilastirmasi.html">Trello vs Asana: Küçük Ekipler İçin Hangisi Daha Verimli?</a>
+          </h3>
+          <p class="card-excerpt">
+            Kanban panosu mu yoksa çok yönlü görev orkestrasyonu mu? Fiyatlandırma, otomasyonlar ve ekip kullanım kolaylığı karşılaştırması.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar" style="background: linear-gradient(135deg, var(--accent-purple), var(--accent-rose));">EK</div>
+              <span class="author-name">Ece K.</span>
+            </div>
+            <a href="rehberler/trello-vs-asana-karsilastirmasi.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="article-card" data-category="tools">
+          <div class="card-top">
+            <span class="badge badge-tools">E-Tablolar</span>
+            <span class="reading-time">⏱️ 9 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/google-e-tablolar-otomatik-butce-tablosu.html">Google E-Tablolar ile Otomatik Bütçe ve Gider Takip Tablosu Yapımı</a>
+          </h3>
+          <p class="card-excerpt">
+            SUMIFS formülü, açılır menülü veri doğrulama ve dinamik pasta grafiklerle harcamalarınızı otomatize edin.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/google-e-tablolar-otomatik-butce-tablosu.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="article-card" data-category="collab">
+          <div class="card-top">
+            <span class="badge badge-collab">Slack</span>
+            <span class="reading-time">⏱️ 5 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/slack-bildirimleri-sessize-alma.html">Slack Bildirimleri Mesai Saatlerine Göre Otomatik Nasıl Susturulur?</a>
+          </h3>
+          <p class="card-excerpt">
+            Notification Schedule, Do Not Disturb takvimi ve acil durum istisnaları ile derin odaklanma saatleri oluşturun.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/slack-bildirimleri-sessize-alma.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="article-card" data-category="tools">
+          <div class="card-top">
+            <span class="badge badge-tools">Dosya Araçları</span>
+            <span class="reading-time">⏱️ 6 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/pdf-dosya-boyutu-kucultme-araclari.html">PDF Dosya Boyutunu Kaliteden Ödün Vermeden Küçültme: En İyi 5 Araç</a>
+          </h3>
+          <p class="card-excerpt">
+            Megabaytlarca PDF belgesini filigransız, kaliteli ve çevrimdışı güvenlik seçenekleriyle e-posta boyutuna indirin.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/pdf-dosya-boyutu-kucultme-araclari.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="article-card" data-category="troubleshoot">
+          <div class="card-top">
+            <span class="badge badge-troubleshoot">Loom</span>
+            <span class="reading-time">⏱️ 6 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/loom-ekran-kaydi-ses-senkronizasyonu.html">Loom Ekran Kaydında Ses ve Görüntü Senkron Kayması Nasıl Çözülür?</a>
+          </h3>
+          <p class="card-excerpt">
+            Chrome donanım ivmesi çakışması, 48.000 Hz örnekleme hızı sabitleme ve masaüstü kodlayıcı çözüm adımları.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/loom-ekran-kaydi-ses-senkronizasyonu.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="article-card" data-category="saas">
+          <div class="card-top">
+            <span class="badge badge-saas">Otomasyon</span>
+            <span class="reading-time">⏱️ 8 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/zapier-alternatifi-ucretsiz-otomasyon-araclari.html">Zapier Alternatifi Ücretsiz Otomasyon Araçları: Make ve n8n İncelemesi</a>
+          </h3>
+          <p class="card-excerpt">
+            Aylık yüksek faturalardan kurtulun. Görsel akış tasarlayan Make ve sınırsız self-hosted n8n karşılaştırması.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/zapier-alternatifi-ucretsiz-otomasyon-araclari.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="article-card" data-category="saas">
+          <div class="card-top">
+            <span class="badge badge-saas">Not Alma</span>
+            <span class="reading-time">⏱️ 7 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/obsidian-not-alma-baslangic-rehberi.html">Obsidian Not Alma Uygulaması Başlangıç Rehberi: En İyi 7 Eklenti</a>
+          </h3>
+          <p class="card-excerpt">
+            İkinci beyin (Second Brain) kurma, çift yönlü bağlantılar ve düşüncelerinizi görsel grafiğe dönüştüren topluluk eklentileri.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/obsidian-not-alma-baslangic-rehberi.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="article-card" data-category="troubleshoot">
+          <div class="card-top">
+            <span class="badge badge-troubleshoot">Teams</span>
+            <span class="reading-time">⏱️ 5 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/microsoft-teams-mikrofon-hatasi-cozumu.html">Microsoft Teams Mikrofon Algılamama ve Ses Gitmeme Hatası Çözümü</a>
+          </h3>
+          <p class="card-excerpt">
+            Toplantıda sesinizin gitmemesi sorunu. Windows gizlilik izinleri, özel mod çakışması ve önbellek sıfırlama adımları.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/microsoft-teams-mikrofon-hatasi-cozumu.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 10 -->
+        <article class="article-card" data-category="tools">
+          <div class="card-top">
+            <span class="badge badge-tools">Tarayıcı</span>
+            <span class="reading-time">⏱️ 5 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/chrome-ram-kullanimini-azaltan-eklentiler.html">Chrome RAM Tüketimini Yarıya İndiren En Hafif 5 Sekme Yöneticisi</a>
+          </h3>
+          <p class="card-excerpt">
+            Açık sekmelerin bilgisayarınızı dondurmasını engelleyin. Sekmeleri askıya alan güvenli ve hafif eklentiler.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/chrome-ram-kullanimini-azaltan-eklentiler.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 11 -->
+        <article class="article-card" data-category="troubleshoot">
+          <div class="card-top">
+            <span class="badge badge-troubleshoot">Zoom</span>
+            <span class="reading-time">⏱️ 5 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/zoom-arka-plan-bulanikkastirma-hatasi.html">Zoom Arka Plan Bulanıklaştırma Çalışmıyor Hatası ve Çözümü</a>
+          </h3>
+          <p class="card-excerpt">
+            Blur seçeneği kayıp mı? AVX2 işlemci desteği kontrolü, web portal ayarları ve 64-bit Zoom kurulumu rehberi.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/zoom-arka-plan-bulanikkastirma-hatasi.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 12 -->
+        <article class="article-card" data-category="saas">
+          <div class="card-top">
+            <span class="badge badge-saas">Freelance</span>
+            <span class="reading-time">⏱️ 6 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/clockify-freelancer-zaman-takibi-rehberi.html">Clockify ile Freelancer Zaman ve Fatura Takibi Rehberi</a>
+          </h3>
+          <p class="card-excerpt">
+            Müşteri bazlı saatlik ücret belirleme, faturalandırılabilir süre takibi ve ay sonu profesyonel PDF raporları.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/clockify-freelancer-zaman-takibi-rehberi.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 13 -->
+        <article class="article-card" data-category="tools">
+          <div class="card-top">
+            <span class="badge badge-tools">Canva</span>
+            <span class="reading-time">⏱️ 5 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/canva-saydam-arka-planli-png-yapma.html">Canva'da Saydam Arka Planlı PNG Oluşturma: Ücretsiz Yöntemler</a>
+          </h3>
+          <p class="card-excerpt">
+            Canva Pro abonesi olmadan şeffaf PNG kaydetme. Adobe Express ve yapay zeka arka plan silme alternatifleri.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/canva-saydam-arka-planli-png-yapma.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 14 -->
+        <article class="article-card" data-category="tools">
+          <div class="card-top">
+            <span class="badge badge-tools">Google Drive</span>
+            <span class="reading-time">⏱️ 6 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/google-drive-depolama-alani-temizleme.html">Google Drive Depolama Alanı Doldu: Büyük Dosyaları Temizleme Rehberi</a>
+          </h3>
+          <p class="card-excerpt">
+            15 GB kotayı aşmadan dev e-posta eklerini silme, gizli WhatsApp yedekleri ve Google Fotoğraflar sıkıştırması.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/google-drive-depolama-alani-temizleme.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 15 -->
+        <article class="article-card" data-category="saas">
+          <div class="card-top">
+            <span class="badge badge-saas">GTD Metodu</span>
+            <span class="reading-time">⏱️ 7 dk okuma</span>
+          </div>
+          <h3 class="card-title">
+            <a href="rehberler/todoist-ile-gtd-metodu-uygulama.html">Todoist ile GTD (Getting Things Done) Metodolojisi Nasıl Uygulanır?</a>
+          </h3>
+          <p class="card-excerpt">
+            Zihninizi boşaltın. Gelen kutusu sıfırlama (Inbox Zero), 2 dakika kuralı ve bağlam etiketleriyle günlük organizasyon.
+          </p>
+          <div class="card-footer">
+            <div class="author-info">
+              <div class="author-avatar">DP</div>
+              <span class="author-name">Danial P.</span>
+            </div>
+            <a href="rehberler/todoist-ile-gtd-metodu-uygulama.html" class="read-more-btn">
+              Rehberi Oku &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Sidebar with Sticky High-CPC Ad Unit -->
+    <aside class="sidebar">
+      <div class="sidebar-sticky">
+        <!-- Ad Placement (Sticky Responsive / 300x600) -->
+        <div class="ad-container" data-ad-slot="sticky-sidebar" style="min-height: 480px;"></div>
+
+        <!-- Newsletter Box -->
+        <div class="newsletter-box" style="margin-top: 2rem;">
+          <h4>Haftalık Verimlilik Bülteni</h4>
+          <p>Yeni araç incelemeleri ve ücretsiz iş akışı şablonları doğrudan gelen kutunuza gelsin.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Bültene başarıyla abone oldunuz!'); this.reset();">
+            <input type="email" required placeholder="E-posta adresiniz" class="newsletter-input">
+            <button type="submit" class="btn-primary">Ücretsiz Katıl</button>
+          </form>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <h4>🍪 Çerez Bildirimi</h4>
+    <p>Sitemizin sorunsuz çalışması, trafik analitiği ve ilgi alanlarınıza özel Google AdSense reklamları sunmak için çerezlerden yararlanıyoruz.</p>
+    <div class="cookie-actions">
+      <button id="cookieAcceptBtn" class="cookie-btn-accept">Tümünü Kabul Et</button>
+      <button id="cookieDeclineBtn" class="cookie-btn-decline">Yalnızca Zorunlu</button>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand-logo" style="margin-bottom: 1rem; display:inline-flex;">
+          <div class="logo-badge">
+            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          VerimHub
+        </a>
+        <p style="font-size: 0.925rem; line-height: 1.6; margin-bottom: 1rem;">
+          Modern profesyoneller ve dağıtık ekipler için bağımsız dijital verimlilik, SaaS araçları ve iş akışı optimizasyonu rehberi.
+        </p>
+        <span style="font-size:0.8rem; color:var(--text-muted);">Telif Hakkı &copy; 2026 VerimHub. Tüm hakları saklıdır.</span>
+      </div>
+
+      <div class="footer-col">
+        <h5>Kategoriler</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">SaaS Araçları</a></li>
+          <li><a href="index.html">Proje Yönetimi</a></li>
+          <li><a href="index.html">İş Akışı Otomasyonu</a></li>
+          <li><a href="index.html">Hata Çözümleri</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Kurumsal</h5>
+        <ul class="footer-links">
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a href="sitemap.xml">Site Haritası</a></li>
+          <li><a href="ads.txt">ads.txt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Yasal & Gizlilik</h5>
+        <ul class="footer-links">
+          <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+          <li><a href="kullanim-sartlari.html">Kullanım Şartları</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 VerimHub. Bu sitedeki tüm içerikler bilgilendirme amaçlıdır.</p>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="gizlilik-politikasi.html">Gizlilik</a>
+        <a href="cerez-politikasi.html">Çerezler</a>
+        <a href="kullanim-sartlari.html">Şartlar</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/analytics.js"></script>
+  <script src="js/ads-manager.js"></script>
+</body>
+</html>

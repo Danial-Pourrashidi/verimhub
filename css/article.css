@@ -1,0 +1,422 @@
+/* ==========================================================================
+   VERIMHUB - ARTICLE & GUIDE LAYOUT STYLESHEET (HIGH RETENTION & HIGH CPC)
+   ========================================================================== */
+
+/* Reading Progress Bar */
+.reading-progress-container {
+  position: fixed;
+  top: 72px; /* right below navbar */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  z-index: 99;
+}
+
+.reading-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--primary), var(--accent-cyan));
+  transition: width 0.1s linear;
+}
+
+/* Article Container Layout */
+.article-page-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 3rem;
+  padding: 2.5rem 0 4rem;
+}
+
+@media (max-width: 992px) {
+  .article-page-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Breadcrumbs */
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.breadcrumb-nav a {
+  color: var(--text-muted);
+}
+
+.breadcrumb-nav a:hover {
+  color: var(--primary);
+}
+
+.breadcrumb-sep {
+  opacity: 0.5;
+}
+
+/* Article Header */
+.article-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.article-header-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  color: var(--text-primary);
+}
+
+.article-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article-author-bio {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.author-bio-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent-purple));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.author-bio-text h6 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.verified-icon {
+  color: var(--primary);
+  width: 16px;
+  height: 16px;
+}
+
+.author-bio-text span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.article-stats-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+/* Callout Box (Quick Answer Snippet) */
+.quick-answer-box {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(6, 182, 212, 0.06));
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-sm);
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.quick-answer-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.quick-answer-box p {
+  font-size: 0.975rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Table of Contents (TOC) */
+.toc-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.toc-header {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.toc-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toc-item a {
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.toc-item a:hover {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+.toc-sub-item {
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+}
+
+/* Article Main Body Typography */
+.article-body {
+  font-size: 1.075rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.article-body h2 {
+  font-size: 1.7rem;
+  margin: 2.5rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.article-body h3 {
+  font-size: 1.3rem;
+  margin: 1.75rem 0 0.75rem;
+  color: var(--text-primary);
+}
+
+.article-body p {
+  margin-bottom: 1.35rem;
+  color: var(--text-secondary);
+}
+
+.article-body ul, .article-body ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.75rem;
+  color: var(--text-secondary);
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+/* Styled Alert Boxes */
+.tip-box {
+  background: rgba(16, 185, 129, 0.08);
+  border-left: 4px solid var(--accent-emerald);
+  padding: 1.2rem;
+  border-radius: var(--radius-sm);
+  margin: 1.75rem 0;
+}
+
+.tip-box strong {
+  color: var(--accent-emerald);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.tip-box p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Data / Comparison Tables */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-surface);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.data-table th, .data-table td {
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.925rem;
+}
+
+.data-table th {
+  background: var(--bg-surface-elevated);
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: 'Outfit', sans-serif;
+}
+
+.data-table tr:hover {
+  background: rgba(37, 99, 235, 0.02);
+}
+
+/* Image Presentation with Caption */
+.article-figure {
+  margin: 2rem 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.figure-caption {
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  background: var(--bg-surface-elevated);
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Interactive FAQ Accordion */
+.faq-section {
+  margin: 3rem 0;
+}
+
+.faq-item {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.75rem;
+  background: var(--bg-surface);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.1rem 1.25rem;
+  text-align: left;
+  background: none;
+  border: none;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-icon {
+  transition: transform var(--transition-fast);
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 1.25rem 1.1rem;
+  display: none;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Author Box at Bottom (E-E-A-T High Authority) */
+.author-box-footer {
+  margin: 3.5rem 0 2.5rem;
+  padding: 2rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .author-box-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.author-box-avatar-lg {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent-cyan));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.author-box-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.35rem;
+}
+
+.author-box-role {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+}
+
+.author-box-desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+/* Article Specific High-TBM Ad Blocks */
+.in-article-ad-1 {
+  margin: 1.75rem 0 2.5rem;
+}
+
+.in-article-ad-2 {
+  margin: 2.5rem 0;
+}
+
+.in-article-ad-3 {
+  margin: 2.5rem 0;
+}

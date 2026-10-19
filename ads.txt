@@ -1,0 +1,3 @@
+# Google AdSense Doğrulama Dosyası
+# AdSense panelinizdeki Yayıncı Kimliğinizi (pub-XXXXXXXXXXXXXXXX) aşağıya giriniz:
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
