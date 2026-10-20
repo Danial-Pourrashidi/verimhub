@@ -6,7 +6,7 @@
  * 1. analytics.google.com adresinden aldığınız "G-XXXXXXXXXX" kodunu aşağıdaki GA4_MEASUREMENT_ID alanına yapıştırın.
  */
 
-const GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Buraya kendi G- Kodunuzu yazın
+const GA4_MEASUREMENT_ID = 'G-NPHWJVXM1R'; // Canlı Google Analytics 4 Ölçüm Kimliği
 
 (function initGoogleAnalytics() {
   if (!GA4_MEASUREMENT_ID || GA4_MEASUREMENT_ID === 'G-XXXXXXXXXX') {
