@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initTableOfContents();
   initFAQAccordion();
   initCookieConsent();
+  initShowMore();
+  initLanguage();
 });
 
 /* ==========================================================================
@@ -239,4 +241,113 @@ function showToast(message) {
   setTimeout(() => {
     toast.classList.remove('show');
   }, 3000);
+}
+
+/* ==========================================================================
+   9. SHOW MORE / SHOW LESS (Article Cards Pagination)
+   ========================================================================== */
+function initShowMore() {
+  const showMoreBtn = document.getElementById('showMoreBtn');
+  const showMoreWrapper = document.getElementById('showMoreWrapper');
+  if (!showMoreBtn) return;
+
+  const hiddenCards = document.querySelectorAll('.article-card.hidden-card');
+  if (hiddenCards.length === 0) {
+    showMoreWrapper.style.display = 'none';
+    return;
+  }
+
+  showMoreBtn.addEventListener('click', () => {
+    hiddenCards.forEach(card => {
+      card.classList.remove('hidden-card');
+      card.style.animation = 'fadeInUp 0.4s ease forwards';
+    });
+    showMoreWrapper.style.display = 'none';
+  });
+}
+
+/* ==========================================================================
+   10. LANGUAGE SWITCHER (TR / EN)
+   ========================================================================== */
+const i18n = {
+  tr: {
+    nav_home: 'Ana Sayfa',
+    nav_about: 'Hakkımızda',
+    nav_contact: 'İletişim',
+    filter_all: 'Tümü (15)',
+    filter_saas: 'SaaS & Verimlilik',
+    filter_collab: 'Proje Yönetimi',
+    filter_tools: 'Araçlar & Formüller',
+    filter_troubleshoot: 'Sorun Giderme',
+    show_more: 'Daha Fazla Göster — 11 Rehber Daha ↓',
+    read_more: 'Rehberi Oku →',
+    section_title: 'En Son Yayınlanan Rehberler',
+  },
+  en: {
+    nav_home: 'Home',
+    nav_about: 'About',
+    nav_contact: 'Contact',
+    filter_all: 'All (15)',
+    filter_saas: 'SaaS & Productivity',
+    filter_collab: 'Project Management',
+    filter_tools: 'Tools & Formulas',
+    filter_troubleshoot: 'Troubleshooting',
+    show_more: 'Show More — 11 More Guides ↓',
+    read_more: 'Read Guide →',
+    section_title: 'Latest Published Guides',
+  }
+};
+
+function applyLanguage(lang) {
+  // Update all data-i18n elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang] && i18n[lang][key]) {
+      el.textContent = i18n[lang][key];
+    }
+  });
+
+  // Update read-more buttons (not tagged with data-i18n individually)
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.textContent = i18n[lang].read_more;
+  });
+
+  // Update section title if present
+  const sectionTitle = document.querySelector('.section-title');
+  if (sectionTitle) sectionTitle.textContent = i18n[lang].section_title;
+
+  // Update html lang attribute
+  document.documentElement.setAttribute('lang', lang);
+
+  // Update lang button active state
+  const trSpan = document.querySelector('[data-lang-tr]');
+  const enSpan = document.querySelector('[data-lang-en]');
+  if (trSpan && enSpan) {
+    if (lang === 'tr') {
+      trSpan.classList.add('lang-active');
+      enSpan.classList.remove('lang-active');
+    } else {
+      enSpan.classList.add('lang-active');
+      trSpan.classList.remove('lang-active');
+    }
+  }
+
+  // Toast notification
+  showToast(lang === 'en' ? '🌐 Switched to English' : '🌐 Türkçeye geçildi');
+}
+
+function initLanguage() {
+  const langBtn = document.getElementById('langToggleBtn');
+  if (!langBtn) return;
+
+  // Load stored language preference
+  const storedLang = localStorage.getItem('vh_lang') || 'tr';
+  if (storedLang === 'en') applyLanguage('en');
+
+  langBtn.addEventListener('click', () => {
+    const currentLang = localStorage.getItem('vh_lang') || 'tr';
+    const newLang = currentLang === 'tr' ? 'en' : 'tr';
+    localStorage.setItem('vh_lang', newLang);
+    applyLanguage(newLang);
+  });
 }
