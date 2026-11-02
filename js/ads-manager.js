@@ -4,9 +4,8 @@
  */
 
 const ADSENSE_CONFIG = {
-  // Canlıya geçildiğinde buraya yayıncı kimliğinizi giriniz:
-  publisherId: 'ca-pub-XXXXXXXXXXXXXXXX',
-  isLive: false, // AdSense onaylandıktan sonra true yapın
+  publisherId: 'ca-pub-9119307549878755',
+  isLive: false, // AdSense hesabı onaylandıktan sonra canlı reklamlar için true yapın
   testMode: true
 };
 
