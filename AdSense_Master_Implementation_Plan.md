@@ -28,10 +28,11 @@
 
 ---
 
-### 1.3. 15 Adet "Low Competition" ve "Long-Tail" Anahtar Kelime / Konu Listesi
+### 1.3. 25 Adet "Low Competition" ve "Long-Tail" Anahtar Kelime / Konu Listesi (Tamamı Yayınlandı ✅)
 
 Aşağıdaki başlıklar, arama niyeti bilgi edinme (Informational) ve problem çözme olan, yeni bir sitenin güçlü sayfa içi SEO ile ilk 30 günde ilk sayfaya yerleşebileceği başlıklardır:
 
+**Seri 1 (Mevcut Temel Rehberler):**
 1. **Notion öğrenci ders programı ve sınav takip şablonu nasıl hazırlanır? (Adım Adım)**
 2. **Trello vs Asana: Küçük ekipler ve serbest çalışanlar için hangisi daha verimli?**
 3. **Google E-Tablolar ile otomatik aylık bütçe ve gider takip tablosu yapımı**
@@ -47,6 +48,18 @@ Aşağıdaki başlıklar, arama niyeti bilgi edinme (Informational) ve problem �
 13. **Canva'da şeffaf arka planlı PNG oluşturma (Ücretsiz ve programsız yöntemler)**
 14. **Google Drive "Depolama Alanı Doldu" uyarısı: Gizli ve büyük dosyaları bulup silme rehberi**
 15. **Todoist ile GTD (Getting Things Done) metodolojisi uygulama rehberi**
+
+**Seri 2 (Yeni Eklenen 10 Yüksek TBM Rehberi):**
+16. **ClickUp vs Monday.com: Ekipler İçin Hangisi Daha Verimli? (2026 Karşılaştırması)**
+17. **Airtable ile Sıfırdan Müşteri Takip Sistemi (CRM) Kurulumu: Adım Adım Rehber**
+18. **Notion AI ve Formül 2.0 ile Otomatik Görev Önceliklendirme Nasıl Yapılır?**
+19. **Figma'da Büyük Dosyaları Hızlandırma ve Bellek Sınırı Hatası Çözümü**
+20. **Google Takvim ile Notion Çift Yönlü Senkronizasyonu (Ücretsiz Entegrasyon)**
+21. **Miro vs FigJam: Online Beyaz Tahta ve Beyin Fırtınası Karşılaştırması**
+22. **ChatGPT ve Notion ile Otomatik Toplantı Notu ve Özet Çıkarma**
+23. **1Password vs Bitwarden: Bireysel ve Ekip Şifre Yönetimi Karşılaştırması**
+24. **Slack ve Discord Kanallarına Webhook ile Otomatik Bildirim Bağlama**
+25. **Google Dokümanlar Çevrimdışı Modu Açma ve Senkronizasyon Sorunu Çözümü**
 
 ---
 
